@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+### git ignore
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
