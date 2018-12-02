@@ -11,16 +11,21 @@
     <modules>
         <module>bill-tool-eureka-server</module>
         <module>bill-tool-zuul-server</module>
-        <module>biil-tool-user-server</module>
         <module>bill-tool-file-server</module>
         <module>bill-tool-core-server</module>
         <module>bill-tool-message-server</module>
-        <module>bill-tool-message-server</module>
+        <module>bill-tool-user-server</module>
     </modules>
 
     <name>bill-tool</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <description>账单工具</description>
+    <url>https://github.com/blkfhusky/bill-tool</url>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+    </parent>
 
 
     <properties>
@@ -31,7 +36,24 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.SR7</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

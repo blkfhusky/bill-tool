@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>biil-tool-user-server</artifactId>
+    <artifactId>bill-tool-user-server</artifactId>
 
-    <name>biil-tool-user-server</name>
+    <name>bill-tool-user-server</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
