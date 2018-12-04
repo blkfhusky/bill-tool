@@ -16,6 +16,7 @@
         <module>bill-tool-core-server</module>
         <module>bill-tool-message-server</module>
         <module>bill-tool-user-server</module>
+        <module>bill-tool-web-server</module>
     </modules>
 
     <name>bill-tool</name>
@@ -37,6 +38,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+    <!--dependencyManagement 只是声明依赖，并不会实现引入，子项目需要单独声明-->
     <dependencyManagement>
         <dependencies>
             <dependency>
