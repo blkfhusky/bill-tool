@@ -10,10 +10,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>bill-tool-core-server</artifactId>
+    <packaging>pom</packaging>
 
     <name>bill-tool-core-server</name>
     <description>账单工具核心业务逻辑</description>
     <url>https://github.com/blkfhusky/bill-tool/tree/master/bill-tool-core-server</url>
+    <modules>
+        <module>bill-tool-core-api</module>
+        <module>bill-tool-core-model</module>
+        <module>bill-tool-core-manage</module>
+        <module>bill-tool-core-dal</module>
+        <module>bill-tool-core-app</module>
+    </modules>
 
     <properties>
     </properties>

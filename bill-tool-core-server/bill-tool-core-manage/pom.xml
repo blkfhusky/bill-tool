@@ -3,30 +3,30 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>bill-tool</artifactId>
+        <artifactId>bill-tool-core-server</artifactId>
         <groupId>com.blkfhusky</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bill-tool-message-server</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>bill-tool-core-manage</artifactId>
 
-    <name>bill-tool-message-server</name>
+    <name>bill-tool-core-manage</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
-    <modules>
-        <module>bill-tool-message-api</module>
-        <module>bill-tool-message-app</module>
-        <module>bill-tool-message-model</module>
-        <module>bill-tool-message-manage</module>
-        <module>bill-tool-message-dal</module>
-    </modules>
+
 
     <properties>
+        <v.bill.tool.core.api>1.0-SNAPSHOT</v.bill.tool.core.api>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.blkfhusky</groupId>
+            <artifactId>bill-tool-core-api</artifactId>
+            <version>${v.bill.tool.core.api}</version>
+        </dependency>
+
     </dependencies>
 
     <build>

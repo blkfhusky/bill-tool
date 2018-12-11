@@ -3,17 +3,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>bill-tool</artifactId>
+        <artifactId>bill-tool-core-server</artifactId>
         <groupId>com.blkfhusky</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bill-tool-web-server</artifactId>
+    <artifactId>bill-tool-core-app</artifactId>
 
-    <name>bill-tool-web-server</name>
-    <description>web层入口</description>
-    <url>http://www.example.com</url>
+    <name>bill-tool-core-app</name>
 
     <properties>
     </properties>
@@ -24,14 +22,9 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
     </dependencies>
 
     <build>
