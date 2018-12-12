@@ -14,9 +14,16 @@
     <name>bill-tool-core-app</name>
 
     <properties>
+        <v.bill.tool.core.manage>1.0-SNAPSHOT</v.bill.tool.core.manage>
     </properties>
 
     <dependencies>
+        <!--依赖manage层，manage中依赖了api层，会注入service-->
+        <dependency>
+            <groupId>com.blkfhusky</groupId>
+            <artifactId>bill-tool-core-manage</artifactId>
+            <version>${v.bill.tool.core.manage}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
